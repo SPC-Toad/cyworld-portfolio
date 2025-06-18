@@ -1,0 +1,32 @@
+/* transition.css */
+:root {
+    /* Transition Speed */
+    --transition-speed-fast: 0.15s; /* For quick transitions */
+    --transition-speed-normal: 0.3s; /* Standard transition speed */
+    --transition-speed-slow: 0.5s; /* For slow transitions */
+    
+    /* Easing Functions */
+    --transition-ease-in-out: ease-in-out;
+    --transition-ease-linear: linear;
+    
+    /* Common Transitions */
+    --transition-bg: background-color var(--transition-speed-normal) var(--transition-ease-in-out);
+    --transition-color: color var(--transition-speed-fast) var(--transition-ease-in-out);
+    --transition-opacity: opacity var(--transition-speed-normal) var(--transition-ease-in-out);
+    --transition-transform: transform var(--transition-speed-normal) var(--transition-ease-in-out);
+    
+    /* Specific Transitions */
+    --hover-transition: background-color var(--transition-speed-fast), 
+                        color var(--transition-speed-fast);
+    --opacity-transition: opacity var(--transition-speed-slow) var(--transition-ease-in-out);
+    --scale-transition: transform var(--transition-speed-normal) var(--transition-ease-in-out);
+    
+    /* Complex Transitions */
+    --rotate-90deg: rotate(90deg);
+    --rotate-180deg: rotate(180deg);
+    --rotate-360deg: rotate(360deg);
+    
+    --scale-up: scale(1.1); /* Slightly larger scale */
+    --scale-down: scale(0.9); /* Slightly smaller scale */
+}
+  

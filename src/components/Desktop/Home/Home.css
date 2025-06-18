@@ -1,0 +1,29 @@
+@import '../../styles/font.css';
+
+.home-container {
+    font-family: "Tahoma", "Segoe UI", Verdana, sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent !important;
+}
+
+.home-background {
+    width: 100%;
+    height: 100vh;
+    object-fit:fill;
+    position: absolute;
+    top: 0;
+}
+
+.home-content {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    position: relative;
+}

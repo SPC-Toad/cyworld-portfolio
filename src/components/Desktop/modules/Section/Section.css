@@ -1,0 +1,54 @@
+:root {
+    --portfolio-book-height:80vh;
+    --portfolio-information-container-height: 40%;
+
+    /* Background */
+    --portfolio-background-color: #808080;
+    --portfolio-grid-line-color: #969696;
+
+    /* Book cover */
+    --book-cover-color: #57BFDC;
+    /* --book-cover-thread-color: #A5E7F6; */
+
+    /* Page content */
+    --book-page-color: #FFFFFF;
+    --book-page-outline-color: #1D1D1D;
+    --book-page-line-color: #C3C3C3;
+    --book-page-text-color: #2478A7;
+    --book-url-text-color: #5C5C5C;
+    --book-bookmark-color: #239AB9;
+}
+
+
+.section-title-container {
+    width: 100%;
+    height: clamp(2rem, 4vh, 3rem);
+    display: flex;
+    align-items: center;
+    background-color: transparent !important;
+}
+
+.section-title-text {
+    width: calc(20% - 4px);
+    height: calc(100% - 2px);
+    min-width: fit-content;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--book-page-line-color);
+    border-bottom: 0;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-color: transparent !important;
+    color: var(--book-page-text-color);
+    font-weight:600;
+    font-size: var(--font-size-lg);
+}
+
+.section-title-line {
+    width: 80%;
+    height: calc(100% - 2px);
+    border-bottom: 3px solid var(--book-page-line-color);
+    background-color: transparent !important;
+}

@@ -1,0 +1,46 @@
+/* color.css :root */
+:root {
+  /* Windows XP Primary Colors */
+  --xp-primary-color: #3a6ea5;  /* XP Taskbar and Window Title Blue */
+  --xp-secondary-color: #99cc00;  /* XP Start Button Green */
+  --xp-accent-color: #ffcc00;  /* XP Yellow/Gold Accent */
+  
+  /* Background Colors */
+  --xp-background-color: #cfe8fc;  /* Desktop background blue */
+  --xp-window-background-color: #ffffff;  /* Inside window background (white) */
+  --xp-sidebar-background-color: #d6e3ef;  /* Sidebar or inactive window background */
+  
+  /* Text Colors */
+  --xp-text-color: #000000;  /* Default black text */
+  --xp-text-muted-color: #666666;  /* Muted gray text */
+  --xp-text-highlight-color: #ffffff;  /* White text for highlighted items */
+  
+  /* System Alerts */
+  --xp-error-color: #ff0000;  /* Red for errors */
+  --xp-warning-color: #ffcc00;  /* Yellow for warnings */
+  --xp-success-color: #008000;  /* Green for success messages */
+  
+  /* Footer (Taskbar) Area */
+  --xp-footer-background-color: #2156D5;  /* Main taskbar blue */
+  --xp-footer-system-background-color: #118EE8;  /* right system taskbar blue */
+  --xp-footer-text-color: #ffffff;  /* White text for taskbar items (e.g., clock) */
+  
+  --xp-footer-nav-background-color: radial-gradient(circle at bottom center, #418CE8, #3784E3, #1D5AC8);  /* 1D5AC8 for the darkest part lightest part 418CE8 */
+  --xp-footer-nav-left-background-color: #FFFFFF;  /* 1D5AC8 for the darkest part lightest part 418CE8 */
+  --xp-footer-nav-right-background-color: #D3E5FA;  /* 1D5AC8 for the darkest part lightest part 418CE8 */
+  --xp-footer-nav-divider-color: linear-gradient(90deg, #FFFFFF 1%, #DD9D83 50%, #FFFFFF 99%);
+
+
+  /* Tab Area */
+  --xp-tab-background-color: #e0e7ef;  /* Light grayish blue for tabs */
+  --xp-tab-top-tab-color: #0054E5;  /* Light gray border between tabs */
+  --xp-tab-side-border-color: #00009E;  /* Light gray border between tabs */
+  --xp-tab-text-color: #FFFFFF;  /* Black text in tab area */
+  
+  /* Borders and Dividers */
+  --xp-border-color: #666666;  /* Border for panels, dividers, etc. */
+  --xp-divider-color: #cccccc;  /* Light divider color */
+
+  --xp-bluescreen-background-color: #010080;
+  --xp-bluescreen-color: #F4FFF8;
+}

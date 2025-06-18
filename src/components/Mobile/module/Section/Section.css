@@ -1,0 +1,37 @@
+@import '../../../styles/font.css';
+
+:root {
+    --page-background-color: #F6F6F6;
+    --section-background-color: #FFFFFF;
+
+    --primary-font-color: #000000;
+    --secondary-font-color: #8A8B8B;
+
+    --emphasize-font-color: #23A6D1;
+    --important-font-color: #F47B42;
+
+    --font-style: cursive;
+}
+
+.mobile-section-title-text {
+    color: var(--emphasize-font-color);
+    margin: .5rem;
+    font-size: var(--font-size-xl);
+}
+
+.mobile-section-list-container {
+    margin-bottom: .5rem;
+}
+
+.mobile-section-list-item {
+    border: 1px var(--secondary-font-color) solid;
+    display: inline-block;
+    white-space: nowrap;
+    padding: .25rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    margin: .5rem;
+    border-radius: .5rem;
+    font-size: var(--font-size-lg);
+    color: var(--primary-font-color);
+}

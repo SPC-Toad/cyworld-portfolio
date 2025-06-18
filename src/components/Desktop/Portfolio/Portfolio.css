@@ -1,0 +1,464 @@
+:root {
+    --portfolio-book-height:80vh;
+    --portfolio-information-container-height: 40%;
+
+    /* Background */
+    --portfolio-background-color: #808080;
+    --portfolio-grid-line-color: #969696;
+
+    /* Book cover */
+    --book-cover-color: #57BFDC;
+    /* --book-cover-thread-color: #A5E7F6; */
+
+    /* Page content */
+    --book-page-color: #FFFFFF;
+    --book-page-outline-color: #1D1D1D;
+    --book-page-line-color: #C3C3C3;
+    --book-page-text-color: #3579AA;
+    --book-url-text-color: #5C5C5C;
+    --book-bookmark-color: #239AB9;
+    --visitor-count-color: #DC626D; /* Example color for visitor count */
+}
+
+.portfolio-container {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--portfolio-background-color); /* background base color */
+    background-image: 
+        linear-gradient(to right, var(--portfolio-grid-line-color) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--portfolio-grid-line-color) 1px, transparent 1px);
+    background-size: 20px 20px;
+    font-family: cursive;
+}
+
+/* Left book container */
+.portfolio-left-book-boarder-container {
+    width: 30%;
+    max-width: 20rem;
+    height: clamp( 35rem, var(--portfolio-book-height), 50rem);
+
+    display: flex;
+    align-items: center;
+    background-color: var(--book-cover-color);
+    border-radius: 1rem;
+}
+
+.portfolio-left-book-stitching-container {
+    width: 100%;
+    max-height: calc(100% - 4rem);
+    max-width: 18rem;
+    height: calc(var(--portfolio-book-height) - 4rem);
+    background-color: var(--book-cover-color);
+    border-radius: 1rem 0 0 1rem;
+    border: 2px dashed var(--book-page-color);
+    border-right: none;
+    margin-left: 2rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.portfolio-left-book-container {
+    width: calc(100% - .25rem);
+    height: calc(100% - 1rem);
+    margin-left: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--book-page-color);
+    border-radius: 1rem;
+    border: 2px solid var(--book-page-outline-color);
+    border-right: none;
+}
+
+.portfolio-inner-page-title-container {
+    width: 100%;
+    height: 5%;
+    text-overflow: none;
+    display: flex;
+    align-items:end;
+    justify-content: space-between;
+    font-size: var(--font-size-md);
+    font-style: italic;
+}
+
+.portfolio-inner-page-title {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: var(--book-url-text-color);
+    /* background-color: seagreen; */
+}
+
+#visitor-count-text {
+    color: var(--visitor-count-color);
+}
+
+.portfolio-inner-page-container {
+    position: relative;
+    width: calc(100% - 1rem);
+    height: calc(90% - 1rem);
+    margin-top: 1rem;
+    border-radius: 1rem;
+    border: 2px solid var(--book-page-outline-color);
+    background-color: var(--book-page-color);
+}
+
+.portfolio-left-content-container {
+    width: 80%;
+    height: 90%;
+    margin-top: 10%;
+    margin-left: 10%;
+    background-color: var(--book-page-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-profile-img {
+    width: 100%;
+    height: clamp(10rem, 25%, 15rem);
+    aspect-ratio: 5/4;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.portfolio-status-text {
+    width: calc(100% - 4px);
+    margin-top: 5%;
+    height: clamp(2rem, 6%, 3rem);
+    border-radius: .5rem;
+    border: 3px solid var(--book-page-line-color);
+    background-color: var(--book-page-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-lg);
+}
+
+.portfolio-quote-text {
+    width: 100%;
+    height: clamp(2.3rem, 20%, 6rem);
+    background-color: var(--book-page-color);
+    display: flex;
+    justify-content: center;
+    overflow-x: none;
+    overflow-y: auto;
+}
+
+.portfolio-user-text {
+    width: 100%;
+    height: clamp(1rem, 10%, 3rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-lg);
+
+}
+
+#gender-text {
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: small;
+    border: 1px solid black;
+    border-radius: .3rem;
+    color: blue;
+    font-size: var(--font-size-md);
+
+}
+
+#age-text {
+    font-size: var(--font-size-md);
+    font-size: var(--font-size-md);
+}
+
+.portfolio-user-email-text {
+    width: 100%;
+    height: clamp(1rem, 10%, 3rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--book-page-color);
+}
+
+
+.portfolio-icon-container {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--book-page-color);
+}
+
+
+/* Right book container */
+.portfolio-right-book-boarder-container {
+    width: 50%;
+    max-width: 55rem;
+    height: clamp( 35rem, var(--portfolio-book-height), 50rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--book-cover-color);
+    border-radius: 1rem;
+}
+
+
+.portfolio-right-book-stitching-container {
+    width: calc(100% - 2rem);
+    max-width: 53rem;
+    max-height: calc(100% - 4rem);
+    height: calc(var(--portfolio-book-height) - 4rem);
+    background-color: var(--book-cover-color);
+    border-radius: 0 1rem 1rem 0;
+    border: 2px dashed var(--book-page-color);
+    border-left: none;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio-right-book-container {
+    width: calc(100% - .25rem);
+    height: calc(100% - 1rem);
+    margin-right: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--book-page-color);
+    border-radius: 1rem;
+    border: 2px solid var(--book-page-outline-color);
+    border-left: none;
+}
+
+.portfolio-book-marker-container {
+    position: absolute;
+    background-color: transparent !important;
+    width: clamp(3.5rem, 8.5%, 5rem);
+    margin-left: 100%;
+    margin-top: 3vh;
+}
+
+.portfolio-book-marker {
+    margin-bottom: .1rem;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    border: 2px solid var(--book-page-outline-color);
+    border-radius: 0 .5rem .5rem 0;
+    padding-top:.5rem;
+    padding-bottom:.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--book-bookmark-color);
+    color: var(--book-page-color);
+    text-align: center;
+}
+
+.portfolio-book-marker.active {
+    background-color: var(--book-page-color);
+    border-left: 2px solid var(--book-page-color);
+    color: var(--book-page-outline-color);
+}
+
+
+.portfolio-main-content-container {
+    background-color: var(--book-page-color);
+    position: absolute;
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* information container */
+.portfolio-information-container {
+    width: clamp(10rem, 10%, 15rem);
+    margin-bottom: 10%;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: var(--book-page-color);
+}
+
+.recent-visitor-location-text {
+    width: 100%;
+    height: clamp(1rem, 10%, 3rem);
+    background-color: var(--book-page-color);
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: 2px dotted #E7E6E7;
+}
+
+
+.portfolio-information-progress-bar-container {
+    width: 100%;
+    height: 2rem;
+    background-color: var(--book-page-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.portfolio-information-progress-bar-title {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.portfolio-information-progress-bar {
+    width: 50%;
+    height: clamp(.1rem, 15%, .8rem);
+    background-color: #CED3D6;
+    z-index: 999;
+    border-radius: .5rem;
+}
+
+
+.media-container {
+    width: 100%;
+    background-color: var(--book-page-line-color);
+}
+
+.media-title-container {
+    width: calc(100% - .6rem);
+    display: flex;
+    margin: .3rem;
+    background-color: var(--portfolio-grid-line-color);
+    overflow: hidden;
+}
+
+.media-title-cd {
+    background-color: var(--portfolio-grid-line-color);
+    z-index: 999;
+    user-select: none;
+
+}
+
+.media-title {
+    width: 100%;
+    background-color: var(--portfolio-grid-line-color);
+    animation: sliding 10s infinite linear;
+    user-select: none;
+    font-size: var(--font-size-md);
+    font-style: italic;
+}
+
+
+.media-control-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--book-page-line-color);
+    width: 100%;
+}
+
+.media-control-button-container {
+    width: 50%;
+    height: clamp(.5rem, 7vh, 1.5rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--book-page-line-color);
+    user-select: none;
+}
+
+.media-control-button {
+    width: 25%;
+    aspect-ratio: 1/1;
+    text-align: center;
+    user-select: none;
+
+}
+
+.media-control-volume-container {
+    width: 50%;
+    display: flex;
+    background-color: var(--book-page-line-color);
+    justify-content: end;
+    align-items: center;
+}
+
+.media-volume-slider {
+    width: 50%;
+    margin-right: .25rem;
+    cursor: pointer;
+}
+
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  background: var(--portfolio-background-color); /* thin 1px-2px dark line */
+  border: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  aspect-ratio: 2/1;
+  background: var(--book-page-color);
+  border: 2px solid var(--book-page-outline-color);
+  border-radius: 5px;
+  margin-top: -2px;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  background: var(--portfolio-background-color);
+  border: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 12px;
+  height: 6px; /* since Firefox doesn't support aspect-ratio, we manually set height */
+  background: var(--book-page-color);
+  border: 2px solid var(--book-page-outline-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@keyframes sliding {
+    0% {
+        transform: translateX(100%); /* Start outside on the left */
+    }
+    50% {
+        transform: translateX(-100%); /* End outside on the right */
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}

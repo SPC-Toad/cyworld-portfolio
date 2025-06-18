@@ -1,0 +1,26 @@
+@import '../../styles/color.css';
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Oxanium:wght@200..800&family=VT323&display=swap');
+
+
+:root {
+    --xp-console: "VT323";
+}
+
+#bluescreen-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--xp-bluescreen-background-color);
+}
+
+#bluescreen-container p {
+    word-wrap: break-word;
+    text-wrap:wrap;
+    padding-top: var(--spacing-vertical-md);
+    font-family: "VT323", monospace;
+    font-weight: var(--font-weight-normal);
+    font-style: normal;
+    font-size: var(--font-size-xl);
+    color: var(--xp-bluescreen-color);
+    letter-spacing: var(--letter-spacing-sm);
+    word-spacing: var(--letter-spacing-lg);
+}

@@ -1,0 +1,49 @@
+/* font.css */
+:root {
+    /* Base font size (assumed to be 16px, or 1rem) */
+    --base-font-size: 1rem; /* 16px equivalent */
+    
+    /* Font Sizes */
+    --font-size-xs-min: .3rem;
+    --font-size-xs-max: .5rem;
+
+    --font-size-sm-min: 0.5rem;
+    --font-size-sm-max: 0.7rem;
+
+    --font-size-md-min: 0.7rem;
+    --font-size-md-max: 0.9rem;
+
+    --font-size-lg-min: .9rem;
+    --font-size-lg-max: 1.1rem;
+
+    --font-size-xl-min: 1.1rem;
+    --font-size-xl-max: 1.3rem;
+
+    --font-size-2xl-min: 1.3rem;
+    --font-size-2xl-max: 1.5rem;
+
+    --font-size-xs: clamp(var(--font-size-xs-min), calc(var(--font-size-xs-min) + .2vw),var(--font-size-xs-max));
+    --font-size-sm: clamp(var(--font-size-sm-min), calc(var(--font-size-sm-min) + .2vw),var(--font-size-sm-max));
+    --font-size-md: clamp(var(--font-size-md-min), calc(var(--font-size-md-min) + .2vw),var(--font-size-md-max));
+    --font-size-lg: clamp(var(--font-size-lg-min), calc(var(--font-size-lg-min) + .2vw),var(--font-size-lg-max));
+    --font-size-xl: clamp(var(--font-size-xl-min), calc(var(--font-size-xl-min) + .2vw),var(--font-size-xl-max));
+    --font-size-2xl: clamp(var(--font-size-2xl-min), calc(var(--font-size-2xl-min) + .2vw),var(--font-size-2xl-max));
+
+
+    
+    /* Line Heights */
+    --line-height-sm: 1.2rem; /* For tight text (19.2px equivalent) */
+    --line-height-md: 1.5rem; /* Normal text (24px equivalent) */
+    --line-height-lg: 2rem; /* For large headers (32px equivalent) */
+    
+    /* Font Weights */
+    --font-weight-normal: 400;
+    --font-weight-medium: 600;
+    --font-weight-bold: 700;
+  
+    /* Letter Spacing */
+    --letter-spacing-sm: 0.05rem; /* 0.8px equivalent */
+    --letter-spacing-lg: 0.1rem; /* 1.6px equivalent */
+}
+  
+
