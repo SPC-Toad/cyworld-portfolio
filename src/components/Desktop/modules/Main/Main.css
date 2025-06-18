@@ -1,0 +1,93 @@
+@import '../../../styles/font.css';
+
+:root {
+    --portfolio-book-height:80vh;
+    --portfolio-information-container-height: 40%;
+
+    /* Background */
+    --portfolio-background-color: #808080;
+    --portfolio-grid-line-color: #969696;
+
+    /* Book cover */
+    --book-cover-color: #57BFDC;
+    /* --book-cover-thread-color: #A5E7F6; */
+
+    /* Page content */
+    --book-page-color: #FFFFFF;
+    --book-page-outline-color: #1D1D1D;
+    --book-page-line-color: #C3C3C3;
+    --book-page-text-color: #2478A7;
+    --book-url-text-color: #5C5C5C;
+    --book-bookmark-color: #239AB9;
+    
+
+    --font-style: cursive;
+}
+
+
+.main-container {
+    background-color: var(--book-page-color);
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: var(--font-style);
+}
+
+.main-upper-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    min-height: 10rem;
+    max-height: 25rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main-upper-left-container {
+    font-size: var(--font-size-lg);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--book-page-color);
+}
+
+.main-upper-right-container {
+    width: 40%;
+    height: 60%;
+    border: 1px solid black;
+    margin-right: 5%;
+}
+
+.main-song-row-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-song-column-cell {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main-introduction-text {
+    width: calc(100% - 1rem);
+    line-height: 1.45;
+    padding: .5rem;
+    font-size: var(--font-size-lg);
+}

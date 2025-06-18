@@ -1,0 +1,60 @@
+@import '../../../styles/styles.css';
+
+:root {
+
+}
+
+#loading-container {
+    width: 12vw;
+    height: 2vh;
+    min-width: 12rem;
+    min-height: 1rem;
+    max-width: 24rem;
+    max-height: 2rem;
+    border: .1rem solid var(--xp-text-highlight-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#loading-block-container {
+    width: 3vw;
+    height: 2vh;
+    min-width: 3rem;
+    min-height: 1rem;
+    max-width: 6rem;
+    max-height: 2rem;
+    display: flex;
+    align-items: center;
+    animation: loading 2s infinite linear;
+}
+
+.loading-block {
+    width: 1vw;
+    min-width: .7rem;
+    min-height: 1rem;
+    max-width: 2rem;
+    max-height: 2rem;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    border-radius: 2px;
+    margin-right: .2rem;
+}
+
+#block-1{
+    background: linear-gradient(180deg, #27318A 0%, #606FFE 12.5%, #98AFFF 25%, #859CFF 50%, #3C42F8 62.5%, #333AFC 75%, #3139F5 87.5%, #23269F 100%);
+}
+#block-2{
+    background: linear-gradient(180deg, #27318A 0%, #606FFE 12.5%, #A7C1FF 25%, #A0BAFF 50%, #7184FF 62.5%, #3944EC 75%, #323AF2 87.5%, #3539EB 100%);
+}
+#block-3{
+    background: linear-gradient(180deg, #27318A 0%, #606FFE 12.5%, #A1BCFF 25%, #9EB7FF 50%, #90ADFA 62.5%, #546CFF 75%, #343AE9 87.5%, #22299D 100%);
+}
+
+@keyframes loading {
+    0% {
+        transform: translateX(-100%); /* Start outside on the left */
+    }
+    100% {
+        transform: translateX(400%); /* End outside on the right */
+    }
+}

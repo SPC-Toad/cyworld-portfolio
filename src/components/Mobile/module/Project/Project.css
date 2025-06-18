@@ -1,0 +1,67 @@
+@import '../../../styles/font.css';
+
+:root {
+    --page-background-color: #F6F6F6;
+    --section-background-color: #FFFFFF;
+
+    --primary-font-color: #000000;
+    --secondary-font-color: #8A8B8B;
+
+    --emphasize-font-color: #23A6D1;
+    --important-font-color: #F47B42;
+
+    --font-style: cursive;
+}
+
+.mobile-project-container {
+    width: 100%;
+    background-color: var(--page-background-color);
+    font-family: var(--font-style) !important;
+}
+
+.mobile-project-title-text {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: calc(100% - .5rem);
+    margin-left: .5rem;
+    background-color: var(--page-background-color);
+    font-size: var(--font-size-2xl);
+}
+
+#mobile-project-list-item-header-container {
+    margin: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-lg);
+}
+
+#mobile-project-list-item-title {
+    color: var(--secondary-font-color);
+    height: 100%;
+    text-align: center;
+    margin-top: .5rem;
+    color: var(--emphasize-font-color);
+}
+
+#mobile-project-list-item-language {
+    color: var(--secondary-font-color);
+    padding: .25rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    margin-top: .5rem;
+    border: 1px solid var(--secondary-font-color);
+    border-radius: .5rem;
+}
+
+#mobile-project-list-item-description {
+    margin: .5rem;
+    color: var(--secondary-font-color);
+    font-size: var(--font-size-lg);
+}
+
+#mobile-project-list-item-link {
+    margin: .5rem;
+    color: var(--important-font-color);
+    font-size: var(--font-size-lg);
+}

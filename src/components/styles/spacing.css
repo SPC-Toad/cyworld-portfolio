@@ -1,0 +1,54 @@
+/* spacing.css */
+:root {
+  /* Spacing Sizes */
+  --spacing-xs: 0.25rem; /* 4px equivalent */
+  --spacing-sm: 0.5rem; /* 8px equivalent */
+  --spacing-md: 1rem; /* 16px equivalent */
+  --spacing-lg: 1.5rem; /* 24px equivalent */
+  --spacing-xl: 2rem; /* 32px equivalent */
+  --spacing-2xl: 3rem; /* 48px equivalent */
+  --spacing-3xl: 4rem; /* 64px equivalent */
+  
+  /* Horizontal and Vertical Spacing */
+  --spacing-horizontal-xs: 0.5rem;  /* Small horizontal margin/padding */
+  --spacing-vertical-xs: 0.5rem;    /* Small vertical margin/padding */
+  
+  --spacing-horizontal-md: 1rem;    /* Standard horizontal margin/padding */
+  --spacing-vertical-md: 1rem;      /* Standard vertical margin/padding */
+  
+  --spacing-horizontal-lg: 1.5rem;  /* Large horizontal margin/padding */
+  --spacing-vertical-lg: 1.5rem;    /* Large vertical margin/padding */
+  
+  --spacing-horizontal-xl: 2rem;    /* Extra large horizontal margin/padding */
+  --spacing-vertical-xl: 2rem;      /* Extra large vertical margin/padding */
+  
+  /* No margin or padding */
+  --spacing-none: 0rem;
+  
+  /* Special Spacing for Containers */
+  --spacing-container-padding: 2.5rem; /* Padding for large containers */
+  --spacing-section-margin: 3rem;      /* Margin between large sections */
+  
+  /* Negative Margins */
+  --spacing-neg-xs: -0.25rem;  /* -4px equivalent */
+  --spacing-neg-sm: -0.5rem;   /* -8px equivalent */
+  --spacing-neg-md: -1rem;     /* -16px equivalent */
+  --spacing-neg-lg: -1.5rem;   /* -24px equivalent */
+  --spacing-neg-xl: -2rem;     /* -32px equivalent */
+  --spacing-neg-2xl: -3rem;    /* -48px equivalent */
+  --spacing-neg-3xl: -4rem;    /* -64px equivalent */
+  
+  /* Negative Horizontal and Vertical Spacing */
+  --spacing-neg-horizontal-xs: -0.5rem;  /* Negative small horizontal spacing */
+  --spacing-neg-vertical-xs: -0.5rem;    /* Negative small vertical spacing */
+  
+  --spacing-neg-horizontal-md: -1rem;    /* Negative standard horizontal spacing */
+  --spacing-neg-vertical-md: -1rem;      /* Negative standard vertical spacing */
+  
+  --spacing-neg-horizontal-lg: -1.5rem;  /* Negative large horizontal spacing */
+  --spacing-neg-vertical-lg: -1.5rem;    /* Negative large vertical spacing */
+  
+  --spacing-neg-horizontal-xl: -2rem;    /* Negative extra large horizontal spacing */
+  --spacing-neg-vertical-xl: -2rem;      /* Negative extra large vertical spacing */
+}
+  

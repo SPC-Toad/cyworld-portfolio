@@ -1,0 +1,23 @@
+@import '../../styles/styles.css';
+
+#landing-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--xp-text-color);
+    color: var(--xp-text-highlight-color);
+}
+
+#windows-logo {
+    object-fit: cover;
+    width: 30vw;
+    min-width: 15rem;
+    max-width: 30rem;
+    aspect-ratio: 3 / 2;
+    height: auto;
+}
+
+

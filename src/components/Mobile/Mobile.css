@@ -1,0 +1,128 @@
+@import '../styles/font.css';
+
+:root {
+    --page-background-color: #F6F6F6;
+    --section-background-color: #FFFFFF;
+
+    --primary-font-color: #000000;
+    --secondary-font-color: #8A8B8B;
+
+    --emphasize-font-color: #23A6D1;
+    --important-font-color: #F47B42;
+
+    --font-style: cursive;
+}
+
+.mobile-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--page-background-color);
+    overflow-x: hidden;
+    margin-bottom: 3rem;
+    font-family: var(--font-style);
+}
+
+.mobile-greeting-text {
+    width: calc(100% - .5rem);
+    padding-top: .5rem;
+    padding-left: .5rem;
+    padding-bottom: 0rem;
+    color: var(--primary-font-color);
+    font-family: var(--font-style);
+    font-size: var(--font-size-xl);
+}
+
+/* General section */
+.section-container {
+    width: calc(100% - 1rem);
+    border-radius: .5rem;
+    background-color: var(--section-background-color);
+    margin: .5rem;
+    box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+}
+
+/* information */
+#information-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#information-upper-container {
+    width: 100%;
+    display: flex;
+    margin: 1.25rem;
+
+}
+
+#normal-font {
+    color: var(--primary-font-color);
+    font-family: var(--font-style);
+    font-size: var(--font-size-xl);
+}
+
+#important-font {
+    color: var(--important-font-color);
+    font-family: var(--font-style);
+    font-size: var(--font-size-lg);
+}
+
+#sub-font {
+    color: var(--secondary-font-color);
+    font-family: var(--font-style);
+    font-size: var(--font-size-lg);
+}
+
+#information-lower-container {
+    margin: 1.25rem;
+    margin-top: .25rem;
+    margin-bottom: 1.75rem;
+}
+
+#profile-img {
+    width: clamp(4rem, 30%, 10rem);
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    background-color: #000;
+    border-radius: 1rem;
+}
+
+#information-text-container {
+    margin: 1rem;
+    margin-top: 0;
+}
+
+#mobile-contact-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#mobile-contact-icon {
+    width: 2rem;
+    aspect-ratio: 1/1;
+    font-size: 2rem;
+}
+
+.mobile-contact-section a {
+    color: var(--primary-font-color);
+}
+
+
+
+.mobile-footer-container {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    bottom:0;
+    background-color: var(--section-background-color);
+    border-radius: .5rem .5rem 0 0;
+}

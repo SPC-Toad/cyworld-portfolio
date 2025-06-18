@@ -1,0 +1,142 @@
+@import '../../../styles/styles.css';
+
+:root {
+    --xp-window-tab-height: 95vh;
+    --xp-window-tab-header-height: 3vh;
+    --xp-window-tab-header-functionality-button-height: 2.1vh;
+}
+
+#tab-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#tab-frame-container {
+    width: 100%;
+    height: var(--xp-window-tab-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#tab-components-container {
+    width: 100%;
+    height: var(--xp-window-tab-height);
+    background-color: transparent;
+    border-left: .2rem solid var(--xp-tab-side-border-color);
+    border-right: .2rem solid var(--xp-tab-side-border-color);
+    overflow-y: auto;
+}
+
+
+#tab-header-container {
+    width: 100%;
+    height: var(--xp-window-tab-header-height);
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--xp-tab-top-tab-color);
+    border-radius: 5px 5px 0 0;
+    position: fixed;
+    z-index: 999;
+}
+
+#tab-header-detatil {
+    display: flex;
+    align-items: center;
+    margin-left: var(--spacing-sm);
+    color: var(--xp-tab-text-color);
+}
+
+#tab-icon {
+    width: 1.1rem;
+    aspect-ratio: 1/1;
+    height: auto;
+    margin-right: var(--spacing-xs);
+}
+
+#tab-title-text {
+    font-size: var(--font-size-md);
+    font-family: cursive;
+}
+
+#tab-header-button-container {
+    display: flex;
+    align-items: center;
+    height: var(--xp-window-tab-header-height);
+    margin-right: var(--spacing-sm);
+}
+
+.tab-button {
+    background-color: transparent;
+    height: var(--xp-window-tab-header-functionality-button-height);
+    aspect-ratio: 1/1;
+    width: auto;
+    border: 1px solid white;
+    margin-left: var(--spacing-xs);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#minimize-button::before {
+    content: '';
+    margin-top: 1vh;
+    margin-right: .5vh;
+    width: 50%; /* Adjust width as needed */
+    height: 3px; /* Thickness of the line */
+    background-color: white;
+    display: block;
+    border-radius: 1px;
+}
+
+#maximize-button:before {
+    content: '';
+    width: 50%;
+    height: 40%;
+    border: 1px solid white;
+    border-top: 3px solid white;
+    background-color: transparent;
+    display: block;
+}
+
+#close-button {
+    position: relative;
+    background-color: var(--xp-error-color);
+}
+
+#minimize-button:hover,
+#maximize-button:hover,
+#minimize-button:active,
+#maximize-button:active
+{
+    background: linear-gradient(135deg, #FFFFFF, transparent);
+}
+
+#close-button:hover, 
+#close-button:active
+{
+    background: linear-gradient(135deg, #FFFFFF, var(--xp-error-color));
+}
+
+#close-button::before, #close-button::after {
+    content: '';
+    width: 80%;
+    border-top: 3px solid white;
+    position: absolute;
+}
+
+#close-button::before {
+    transform: rotate(45deg);
+}
+
+#close-button::after {
+    transform: rotate(-45deg);
+}
+
+#tab-content-container {
+    margin-top: var(--xp-window-tab-header-height);
+    position: relative;
+}
