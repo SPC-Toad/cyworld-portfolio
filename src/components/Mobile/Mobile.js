@@ -12,8 +12,7 @@ import linkedin from '../assets/linkedin.png'
 
 import Section from './module/Section/Section';
 import Project from './module/Project/Project';
-import { faFilePdf, faFolderOpen, faScrewdriverWrench, faUser } from '@fortawesome/free-solid-svg-icons';
-import { faAddressCard } from '@fortawesome/free-solid-svg-icons/faAddressCard';
+import { faFilePdf, faFolderOpen, faScrewdriverWrench, faUser, faAddressCard } from '@fortawesome/free-solid-svg-icons';
 
 const educationData = [
   "Boston University CS (3.64 GPA, Dean’s List)",
